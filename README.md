@@ -1,6 +1,6 @@
 # zbx-active-proxy-ping
-Zabbix template for network problem visualization between Zabbix server and active proxy. Useful if you don't monitor this network.
-LLD script to explore trace from active proxy to Zabbix server and create an ICMP test for each host via mtr. 
-LLD script has to be run by cron. If LLD interval much less than keep lost resources period you may monitor differernt routs. 
+Zabbix template v3.4 for visualization of network problems between Zabbix server and active proxy. Useful if you don't monitor the network itself.
+LLD script to explore the trace from active proxy to Zabbix server via mtr and create an ICMP test for each network node by simple check. 
+LLD script has to be run by cron. If a LLD update interval much less than a keep lost resources period you may monitor differernt routs. 
 Assume proxy monitored via itself.
 Master and dependent item prototypes for discarding zero values of ping response time in case of timeout (for Zabbix below v4.2, in v4.2 there is discarding via validation in preprocessing).
